@@ -1,0 +1,17 @@
+/* src/TitleHeader.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
+
+.title-header {
+    background-color: #88c1a3;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .title-header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: "Lilita One", sans-serif;
+  }
+  
