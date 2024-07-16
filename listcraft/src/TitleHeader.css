@@ -1,9 +1,8 @@
-/* src/TitleHeader.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
 
 .title-header {
-    background-color: #88c1a3;
+    background-color: #8ab388;
     background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
     padding: 20px;
     color: white;

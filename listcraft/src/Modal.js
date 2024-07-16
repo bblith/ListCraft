@@ -17,7 +17,7 @@ function Modal({ onClose, onAddCard, title }) {
     <div className="modal-overlay">
       <div className="modal">
         <div className="modal-header">
-          <h2>{title ? newTitle : 'New Card'}</h2>
+          <h2>{title ? 'Edit Card' : 'New Card'}</h2>
           <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={onClose} />
         </div>
         <input

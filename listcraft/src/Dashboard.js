@@ -31,7 +31,7 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="dashboard-header">
-        <h2>DASHBOARD</h2>
+        <h2>TASK DASHBOARD</h2>
         <FontAwesomeIcon icon={faPlus} className="add-card-icon" onClick={openModal} />
       </div>
       <div className="cards-container">

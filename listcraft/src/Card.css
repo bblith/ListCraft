@@ -1,7 +1,7 @@
 /* src/components/Card.css */
 .card {
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #8ab388;
     cursor: pointer;
     border: 1px solid #ddd;
     text-align: center;
@@ -12,6 +12,7 @@
   
   .card h3 {
     margin: 10px;
+    color: white;
   }
 
   .card:hover {

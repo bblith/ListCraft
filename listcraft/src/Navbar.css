@@ -1,0 +1,29 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #a7895b;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    padding: 10px 0;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
