@@ -1,8 +1,8 @@
 // src/App.js
 import React from 'react';
 import './App.css';
-import TitleHeader from './components/TitleHeader';
-import Dashboard from './components/Dashboard';
+import TitleHeader from './TitleHeader';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
