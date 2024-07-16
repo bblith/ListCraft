@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import './Dashboard.css';
 import Card from './Card';
 import Modal from './Modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 function Dashboard() {
   const [cards, setCards] = useState([
@@ -28,14 +30,14 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <h2>Dashboard</h2>
+      <div className="dashboard-header">
+        <h2>DASHBOARD</h2>
+        <FontAwesomeIcon icon={faPlus} className="add-card-icon" onClick={openModal} />
+      </div>
       <div className="cards-container">
         {cards.map(card => (
           <Card key={card.id} title={card.title} />
         ))}
-        <div className="add-card" onClick={openModal}>
-          <h3>+ Add New Card</h3>
-        </div>
       </div>
       {isModalOpen && <Modal onClose={closeModal} onAddCard={addCard} />}
     </div>

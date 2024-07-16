@@ -11,6 +11,11 @@
   }
   
   .card h3 {
-    margin: 0;
+    margin: 10px;
+  }
+
+  .card:hover {
+    opacity: 75%;
+    padding: 10px;
   }
   

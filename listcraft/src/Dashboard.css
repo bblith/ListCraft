@@ -1,28 +1,35 @@
 /* src/components/Dashboard.css */
 .dashboard {
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 60px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .add-card {
-    padding: 20px;
-    background-color: #d0e0ff;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  color: #88c1a3;
+  justify-content: space-between;
+}
+
+.add-card-icon {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #88c1a3;
+}
+
+.add-card-icon:hover {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #547764;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

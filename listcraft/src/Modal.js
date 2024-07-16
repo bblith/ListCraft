@@ -1,6 +1,8 @@
 // src/components/Modal.js
 import React, { useState } from 'react';
 import './Modal.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function Modal({ onClose, onAddCard, title }) {
   const [newTitle, setNewTitle] = useState(title || '');
@@ -14,7 +16,10 @@ function Modal({ onClose, onAddCard, title }) {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <h2>{title ? 'Edit Card' : 'New Card'}</h2>
+        <div className="modal-header">
+          <h2>{title ? 'Edit Card' : 'New Card'}</h2>
+          <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={onClose} />
+        </div>
         <input
           type="text"
           value={newTitle}
@@ -22,7 +27,6 @@ function Modal({ onClose, onAddCard, title }) {
           placeholder="Card Title"
         />
         <button onClick={handleSave}>Save</button>
-        <button onClick={onClose}>Close</button>
       </div>
     </div>
   );
