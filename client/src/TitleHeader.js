@@ -1,10 +1,11 @@
 import React from 'react';
-import './TitleHeader.css'; 
+import './TitleHeader.css';
+import ListCraftLogo from './Assets/ListCraftLogo.png'; // Adjust the path as necessary
 
 function TitleHeader() {
   return (
     <header className="title-header">
-      <h1>LIST CRAFT</h1>
+      <img src={ListCraftLogo} alt="List Craft Logo" className="logo" />
     </header>
   );
 }
