@@ -1,10 +1,10 @@
 /* src/components/Footer.css */
 .footer {
-    background-color: #8ab388;
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    background-color: #658b64;
+    background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     position: fixed;
     width: 100%;
     bottom: 0;

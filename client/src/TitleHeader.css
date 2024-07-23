@@ -1,17 +1,13 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
 
 .title-header {
-    background-color: #8ab388;
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .title-header h1 {
-    margin: 0;
-    font-size: 3em;
-    font-family: "Lilita One", sans-serif;
-  }
-  
+  background-color: #658b64;
+  background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+  padding: 15px;
+  text-align: center;
+}
+
+.title-header .logo {
+  max-width: 350px;
+  height: auto;
+}
