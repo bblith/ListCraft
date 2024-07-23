@@ -72,7 +72,9 @@ function Dashboard() {
       <div className="dashboard">
         <div className="dashboard-header">
           <h2>DASHBOARD</h2>
+          <div className="right-align">
           <FontAwesomeIcon icon={faPlus} className="add-card-icon" onClick={() => openModal()} />
+          </div>
         </div>
         <div className="cards-container">
           {cards.map(card => (
