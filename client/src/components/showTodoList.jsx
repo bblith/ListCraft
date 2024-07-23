@@ -77,7 +77,7 @@ export function ShowTodoList() {
                 <button className="button">New</button>
             </Link>
             <section className="contents">
-                <h1>TODO</h1>
+                <h1>TODO-DashBoard</h1>
                 <ul className="list-container">
                     {todo.map((data) => (
                         <TodoCard
