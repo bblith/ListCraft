@@ -1,3 +1,4 @@
+/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&display=swap');
 
 .dashboard {
@@ -12,7 +13,7 @@
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   color: #658b64;
 }
 
@@ -36,3 +37,124 @@
   color: #547764;
 }
 
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.doing {
+  background-color: #f39c12; /* Orange */
+}
+
+.complete {
+  background-color: #27ae60; /* Green */
+}
+
+.backlog {
+  background-color: #e74c3c; /* Red */
+}
+
+.unassigned {
+  background-color: #95a5a6; /* Gray */
+}
+
+.restructure {
+  background-color: #9b59b6; /* Purple */
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+}
+
+/* Dashboard and Friends Component Styles */
+.dashboard-container {
+  padding: 20px;
+}
+
+.welcome-message {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+.friends-section {
+  margin-bottom: 30px;
+}
+
+.friends-section-header {
+  font-family: "Bebas Neue", sans-serif;
+  color: #658b64;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Adjust margin for spacing */
+  display: block; /* Ensure it takes the full width */
+  width: 100%; /* Ensure it takes the full width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.submitButton {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: #8ab388;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block; /* Ensure it wraps around the text */
+}
+
+.submitButton:hover {
+  background-color: #547764;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

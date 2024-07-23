@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { signOut } from 'firebase/auth';
 import { auth } from './Firebase';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Navbar() {
   const navigate = useNavigate();
@@ -21,8 +21,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#social">Social</a></li>
+        <li><Link to="/dashboard">Dashboard</Link></li>
+        {/*<li><Link to="/social">Social</Link></li>*/}
+       {/* <li><Link to="/friends">Friends</Link></li> */}{/* New Friends Tab */}
         <li><button onClick={handleLogout} className="logout-button">Logout</button></li>
       </ul>
     </nav>

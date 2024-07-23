@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from './Firebase';
-import styles from './SignUp.module.css'; 
+import styles from './SignUp.module.css';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -32,8 +32,7 @@ const Signup = () => {
         displayName: `${firstName} ${lastName}`
       });
 
-      // Instead of setting the user data here, we will navigate to the multi-step form
-      navigate('/user-info-form', { state: { userId: user.uid, email: user.email, firstName, lastName } });
+      navigate('/dashboard'); // Navigate to dashboard or any other route after signup
     } catch (error) {
       const errorMessage = error.message;
       setError(errorMessage);
