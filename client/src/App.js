@@ -33,10 +33,9 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
               <Route path="*" element={<Navigate to="/" />} />
-
-              {/* Manually change the url ending to match view these two */}
-              <Route exact path="/show-todo" element={<ShowTodoList />} />
-              <Route path="/create-todo" element={<CreateTodo />} />
+                
+                 <Route exact path="/" element={<ShowTodoList/>} />  
+                    <Route path="/create-todo" element={<CreateTodo/>} />
             </Routes>
           </Layout>
           <Footer />
