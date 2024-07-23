@@ -17,6 +17,9 @@
   color: #658b64;
 }
 
+h3 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .header-left {
   display: flex;
   align-items: center;
@@ -157,4 +160,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+
+.analytics-value {
+  color: #658b64; /* Green color */
+  font-weight: bold;
 }

@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { signOut } from 'firebase/auth';
 import { auth } from './Firebase';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const navigate = useNavigate();
@@ -21,9 +22,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <ul>
-        <li><Link to="/dashboard">Dashboard</Link></li>
-        {/*<li><Link to="/social">Social</Link></li>*/}
-       {/* <li><Link to="/friends">Friends</Link></li> */}{/* New Friends Tab */}
+        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+        <li><NavLink to="/analytics">Analytics</NavLink></li>
         <li><button onClick={handleLogout} className="logout-button">Logout</button></li>
       </ul>
     </nav>
