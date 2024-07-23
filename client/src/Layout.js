@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 function Layout({ children }) {
   const location = useLocation();
-  const hideNavbar = location.pathname === '/' || location.pathname === '/login' || location.pathname === '/signup';
+  const hideNavbar = ['/','/login', '/signup', '/reset-password'].includes(location.pathname); // Include /reset-password
 
   return (
     <div>

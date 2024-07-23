@@ -3,17 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import './App.css';
 import TitleHeader from './TitleHeader';
 import Dashboard from './Dashboard';
-import Footer from './Footer';
-
 import Landing from './Landing';
 import Login from './Login';
 import Signup from './SignUp';
-import { AuthProvider, useAuth } from './AuthContext'; // Import useAuth
-import Layout from './Layout';
-
+import PasswordReset from './PasswordReset';
 import ShowTodoList from './components/showTodoList';
-// import { BrowserRouter, Route, Routes } from "react-router-dom"; 
 import CreateTodo from './components/createTodo';
+import { AuthProvider, useAuth } from './AuthContext';
+import Layout from './Layout';
 
 function PrivateRoute({ children }) {
   const { currentUser } = useAuth();
@@ -31,14 +28,13 @@ function App() {
               <Route path="/" element={<Landing />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/reset-password" element={<PasswordReset />} />
               <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
               <Route path="*" element={<Navigate to="/" />} />
-                
-                 <Route exact path="/" element={<ShowTodoList/>} />  
-                    <Route path="/create-todo" element={<CreateTodo/>} />
+              <Route path="/show-todo-list" element={<ShowTodoList />} />
+              <Route path="/create-todo" element={<CreateTodo />} />
             </Routes>
           </Layout>
-          <Footer />
         </div>
       </Router>
     </AuthProvider>
@@ -46,4 +42,3 @@ function App() {
 }
 
 export default App;
-

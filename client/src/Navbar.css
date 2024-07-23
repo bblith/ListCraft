@@ -3,6 +3,8 @@
     background-color: #a7895b;
     background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
     padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+
   }
   
   .navbar ul {

@@ -1,20 +1,31 @@
-/* src/components/Card.css */
 .card {
-    padding: 20px;
-    background-color: #8ab388;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
-  .card h3 {
-    margin: 10px;
-    color: white;
-  }
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  text-align: left;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .card:hover {
-    opacity: 75%;
-  }
-  
+h3 {
+  color: #658b64;
+}
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #658b64;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #547764;
+}

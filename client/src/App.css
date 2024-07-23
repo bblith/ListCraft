@@ -30,16 +30,7 @@ h2 {
     color: #658b64;
 }
 
-.container {
-  background: white;
-  backdrop-filter: blur(30px);
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-  text-align: center;
-  opacity: 85%;
-  z-index: 2;
-  padding: 40px;
-}
+
 
 .formGroup {
   margin-bottom: 1rem;

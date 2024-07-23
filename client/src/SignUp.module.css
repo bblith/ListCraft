@@ -11,26 +11,19 @@ body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-
-.signupMain, .loginMain {
+main {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   position: relative;
   z-index: 1;
   padding-top: 60px;
-}
-
-.signupContent, .loginContent {
-  display: flex;
-  align-items: center;
-  z-index: 2;
 }
 
 
@@ -42,14 +35,12 @@ body, html {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   text-align: center;
   opacity: 85%;
-  z-index: 2;
+  z-index: 0;
   padding: 40px;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
-
-
-
 
 .formGroup {
   margin-bottom: 1rem;
@@ -109,12 +100,10 @@ body, html {
     transform: scale(.95);
 }
 
-
 .navLink {
   margin-top: 0.5rem;
   color: #9d9d9d;
-  font-size: 20px;;
-
+  font-size: 20px;
 }
 
 .navLink:hover {
@@ -174,8 +163,6 @@ body, html {
   }
 }
 
-
-
 .landingContainer {
   display: flex;
   flex-direction: column;
@@ -207,29 +194,6 @@ p {
   text-decoration: none;
 }
 
-.button {
-  --width: 180px;
-  --height: 60px;
-  --btn-bg: #007bff;
-  --btn-bg-hover: #0056b3;
-  --icon-size: 25px;
-  
-  border: 0;
-  position: relative;
-  min-width: var(--width);
-  min-height: var(--height);
-  border-radius: var(--height);
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  background: var(--btn-bg);
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background 500ms ease;
-}
 
 .text,
 .iconContainer {

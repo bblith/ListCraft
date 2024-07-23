@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Landing.module.css'; // Import the CSS module
+import ListGraphic from './Assets/ListGraphic.png'; // Adjust the path to your image file
 
 function Landing() {
   return (
     <div className={styles.landingContainer}>
+      <img src={ListGraphic} alt="ListCraft Graphic" className={styles.listGraphic} />
       <h1>Welcome to ListCraft!</h1>
       <p>Your Task Management Companion</p>
       <div className={styles.btnContainer}>
