@@ -1,8 +1,7 @@
-// src/components/Modal.js
 import React, { useState, useEffect } from 'react';
 import './Modal.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faPlus, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPlus, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 const tags = [
   { label: 'Doing', value: 'doing', colorClass: 'tag-option-doing' },
@@ -65,6 +64,10 @@ function Modal({ onClose, onSaveCard, card }) {
     console.log('Deleted list item at index:', index);
   };
 
+  const handleCheckboxChange = (index) => {
+    deleteListItem(index);
+  };
+
   return (
     <div className="modal-overlay">
       <div className="modal">
@@ -90,10 +93,13 @@ function Modal({ onClose, onSaveCard, card }) {
         <div className="list-item-container">
           {listItems.map((item, index) => (
             <div key={index} className="list-item">
+              <input
+                type="checkbox"
+                onChange={() => handleCheckboxChange(index)}
+              />
               <span>{item}</span>
               <div className="list-item-actions">
                 <FontAwesomeIcon icon={faEdit} className="edit-icon" onClick={() => editListItem(index)} />
-                <FontAwesomeIcon icon={faTrash} className="delete-icon" onClick={() => deleteListItem(index)} />
               </div>
             </div>
           ))}

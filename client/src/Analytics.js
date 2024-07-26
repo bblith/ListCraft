@@ -65,11 +65,11 @@ function Analytics() {
         </div>
         <div className="cards-container">
           <div className="card">
-            <h3>Total Cards</h3>
+            <h3>Total Lists</h3>
             <p className="analytics-value">{totalCards}</p>
           </div>
           <div className="card">
-            <h3>Total List Items</h3>
+            <h3>Total Pending Tasks</h3>
             <p className="analytics-value">{totalListItems}</p>
           </div>
           <div className="card">

@@ -13,7 +13,7 @@
 
 .modal {
   background-color: #fff;
-  padding: 20px;
+  padding: 50px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -38,7 +38,7 @@
   font-size: 1.5em;
 }
 
-.modal input {
+.modal input[type="text"] {
   margin: 10px 0;
   padding: 10px;
   width: calc(100% - 22px); 
@@ -48,7 +48,7 @@
   outline: none; 
 }
 
-.modal input:focus {
+.modal input[type="text"]:focus {
   border-bottom: 2px solid #8ab388; 
 }
 
@@ -97,11 +97,23 @@
 
 .list-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-bottom: 5px;
   padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.list-item input[type="checkbox"] {
+  margin-right: 10px;
+ transform: scale(1.5)
+}
+
+.list-item span {
+  flex-grow: 1;
+  text-align: left;
 }
 
 .list-item-actions {
@@ -109,23 +121,25 @@
   gap: 5px;
 }
 
-.edit-icon, .delete-icon {
+.edit-icon {
   cursor: pointer;
   color: #8ab388; /* Green */
   transition: color 0.3s;
 }
 
-.edit-icon:hover, .delete-icon:hover {
+.edit-icon:hover {
   color: #547764; /* Darker green on hover */
 }
 
 .add-list-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 10px;
   padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .add-icon {
