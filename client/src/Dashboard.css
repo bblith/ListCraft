@@ -120,10 +120,10 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin-bottom: 10px; /* Adjust margin for spacing */
-  display: block; /* Ensure it takes the full width */
-  width: 100%; /* Ensure it takes the full width */
-  box-sizing: border-box; /* Include padding and border in the width */
+  margin-bottom: 10px; 
+  display: block; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .submitButton {
@@ -136,7 +136,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;
-  display: inline-block; /* Ensure it wraps around the text */
+  display: inline-block; 
 }
 
 .submitButton:hover {
